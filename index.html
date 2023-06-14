@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CODE CRAFTS</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a2b2c291c7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <div class="navbar">
+        <img src="images/logo.png" class="logo" alt="group-logo">
+        <nav class="navigation">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT US</a>
+                    <ul>
+                        <li><a href="#">MISSION</a></li>
+                        <li><a href="#">VISSION</a></li>
+                        <li><a href="#">GOALS</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">PROJECTS</a></li>
+                <li><a href="#">TEAM</a></li>
+                <li><a href="#">GALLERY</a></li>
+                <li><a href="#">CONTACT US</a></li>
+                <li><a href="#">DOWNLOADS</a></li>
+            </ul>
+        </nav>
+        <div class="search">
+            <i class="fa fa-magnifying-glass"></i>
+        </div>
+    </div>
+    <!-------------------------------------swiper--------------------------------->
+
+
+    <div class="swiper">
+       
+        <div class="swiper-wrapper">
+           
+            <div class="swiper-slide"><img src="images/sp1.jpg"></div>
+            <div class="swiper-slide"><img src="images/sp2.jpg"></div>
+            <div class="swiper-slide"><img src="images/sp3.jpg"></div>
+            <div class="swiper-slide"><img src="images/sp4.jpg"></div>
+            <div class="swiper-slide"><img src="images/sp5.jpg"></div>
+            <div class="swiper-slide"><img src="images/sp6.jpg"></div>
+            <div class="swiper-slide"><img src="images/aston-martin.jpg"></div>
+            <div class="swiper-slide"><img src="images/audi-rs-e-tron-gt.jpg"></div>
+            <div class="swiper-slide"><img src="images/maserati-mc20.jpg"></div>
+            <div class="swiper-slide"><img src="images/nio-et5.jpg"></div>
+        </div>
+       
+        <div class="swiper-pagination"></div>
+
+        
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <!--------------------------icons--------------------------------------->
+    <div class="icons">
+        <i class="fa-brands fa-facebook-f fa-bounce" style="color: #1a5fb4;"></i>
+        <br>
+        <i class="fa-brands fa-twitter fa-bounce" style="color: #3584e4;"></i>
+        <br>
+        <i class="fa-brands fa-youtube fa-bounce" style="color: #e01b24;"></i>
+        <br>
+        <i class="fa-regular fa-envelope fa-bounce" style="color: #ed333b;"></i>
+    </div>
+
+    <!------------------------------------------javascript-for-swiper----------------------------------->
+    <script>
+        const swiper = new Swiper('.swiper', {
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+
+</body>
+
+</html>
